@@ -61,7 +61,6 @@
 		compatible = "zmk,ext-power-generic";
 		label = "EXT_POWER";
 		control-gpios = <&gpio1 9 GPIO_ACTIVE_HIGH>;
-		init-delay-ms = <50>;
 	};
 
 	vbatt: vbatt {
@@ -114,6 +113,15 @@
 };
 
 
+&left_encoder {
+    status = "okay";
+};
+
+&right_encoder {
+    status = "okay";
+};
+
+
 &gpio0 {
 	status = "okay";
 };
@@ -134,11 +142,12 @@
 	};
 };
 
-&left_encoder {
-    status = "okay";
-};
 
-&right_encoder {
-    status = "okay";
+&uart0 {
+    compatible = "nordic,nrf-uarte";
+    current-speed = <115200>;
+    pinctrl-0 = <&uart0_default>;
+    pinctrl-1 = <&uart0_sleep>;
+    pinctrl-names = "default", "sleep";
 };
 
