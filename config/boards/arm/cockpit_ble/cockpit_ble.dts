@@ -10,6 +10,12 @@
 #include "cockpit_ble_oled.dtsi"
 #include "cockpit_ble_led_strip.dtsi"
 #include "cockpit_ble_flash.dtsi"
+#include "layouts/full.dtsi"
+
+&cockpit_ble_full_layout {
+    transform = <&default_transform>;
+};
+
 
 / {
 	model = "cockpit_ble";
@@ -21,7 +27,7 @@
 		zephyr,sram = &sram0;
 		zephyr,flash = &flash0;
 		zmk,kscan = &kscan0;
-		zmk,matrix_transform = &default_transform;
+		zmk,physical-layout = &cockpit_ble_full_layout;
 		zmk,underglow = &led_strip;
 		zephyr,console = &cdc_acm_uart;
 		zmk,battery = &vbatt;
