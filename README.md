@@ -13,6 +13,11 @@ Layout Display Name: Turkish Q
 Layout Text: Turkish Q
 ```
 
+```
+Adding zmk studio support for Cockpit BLE keyboard. 
+ZMK Studio unlock key combos: Q+W
+```
+
 ## Cockpit BLE
 ### Colemak Layer (default)
 ```
