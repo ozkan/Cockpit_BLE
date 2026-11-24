@@ -1,9 +1,11 @@
+
 file_format: "1"
 id: cockpit_ble
-name: cockpit_ble
+name: Cockpit BLE
 type: board
-url: https://githbub.com/ozkan
-exposes: [i2c_oled]
+url: https://github.com/ozkan/Cockpit_BLE
+exposes:
+  - i2c_oled
 features:
   - keys
   - display
