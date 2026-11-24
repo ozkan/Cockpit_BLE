@@ -38,6 +38,18 @@
 		blue_led: led_0 {
 			gpios = <&gpio1 13 GPIO_ACTIVE_HIGH>;
 		};
+		
+		caps_lock_led: caps_lock_led {
+        	gpios = <&gpio0 7 GPIO_ACTIVE_HIGH>;
+    	};
+	};
+
+	indicators {
+	    compatible = "zmk,indicator-leds";
+   		caps_lock_indicator: caps_lock {
+        	indicator = <HID_INDICATOR_CAPS_LOCK>;
+        	leds = <&caps_lock_led>;
+    	};
 	};
 
 	left_encoder: encoder_left {
