@@ -118,6 +118,9 @@
     regulator-initial-mode = <NRF5X_REG_MODE_DCDC>;
 };
 
+&gpiote {
+    status = "okay";
+};
 
 &left_encoder {
     status = "okay";
