@@ -1,0 +1,8 @@
+
+board:
+  name: cockpit_ble
+  vendor: ozkan
+  socs:
+    - name: nrf52840
+      variants:
+        - name: zmk
